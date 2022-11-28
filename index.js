@@ -5,6 +5,7 @@ const https = require('https');
 const port = 5000;                  //Save the port number where your server will be listening
 
 app.use('/assets', express.static(__dirname + '/assets/'));
+app.use('/favicon.ico', express.static(__dirname + '/favicon.ico'));
 
 //Idiomatic expression in express to route and respond to a client request
 app.get('/', (req, res) => {        //get requests to the root ("/") will route here
